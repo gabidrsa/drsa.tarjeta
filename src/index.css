@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --dr-navy: #0a1d88;
+    --dr-navy-dark: #061158;
+    --dr-navy-light: #152bb5;
+    --dr-orange: #e5720b;
+    --dr-orange-hover: #c96005;
+    --dr-yellow: #fcd412;
+  }
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(10, 29, 136, 0.2);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(229, 114, 11, 0.5);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(229, 114, 11, 0.8);
+}
+
+/* Smooth mobile phone container proportions */
+.aspect-mobile-vertical {
+  aspect-ratio: 9 / 16;
+}
+
+/* Subtle textile grid pattern background */
+.bg-textile-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+                    radial-gradient(rgba(229, 114, 11, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+/* Shimmer animation for QR frame highlight */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 0.9; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.005); }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 4s ease-in-out infinite;
+}
