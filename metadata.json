@@ -1,6 +1,0 @@
-{
-  "name": "D.R SA - Tarjeta Digital y Pantalla QR",
-  "description": "Diseños corporativos verticales (9:16) para D.R SA - Distribución de telas y textiles. Pantalla QR y Tarjeta Digital interactiva.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
